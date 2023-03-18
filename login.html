@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up</title>	
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+   <header>
+      <span class="logo"><i class="fab fa-wpforms"></i></span>
+      <h1>Sign Up</h1>
+   </header>
+   <main>
+      <section id="regForm">
+         <b class="grey">Start for Free</b>
+         <h2 class="black">Sign into account</h2>
+         <form action="#">
+            <div class="vertical">
+               <div class="formCard" id="formUser">
+                  <div class="input">
+                     <label for="user">Username</label>
+                     <input type="text" placeholder="sakshi_sasalate">
+                  </div>
+                  <div class="icon">
+                     <i class="fas fa-user"></i>
+                  </div>
+               </div>
+               <small id="warnUser"></small>
+            </div>
+            <div class="vertical">
+               <div class="formCard" id="formEmail">
+                  <div class="input">
+                     <label for="email">Email</label>
+                     <input type="email" placeholder="sakshi_sasalate@gmail.com">
+                  </div>
+                  <div class="icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+               </div>
+               <small id="warnEmail"></small>
+            </div>
+            <div class="vertical">
+               <div class="formCard" id="formPass">
+                  <div class="input">
+                     <label for="pass">Password</label>
+                     <input type="password" placeholder="Password">
+                  </div>
+                  <div class="icon">
+                     <span onclick="showhidePass(pass, this)"><i class="fas fa-eye"></i></span>
+                  </div>
+               </div>
+               <small id="warnPass"></small>
+            </div>
+            <button class="primary-button" onclick="login()" type="button">Login</button>
+         </form>
+      </section>
+      <section id="illu">
+         <img src="./assets/illu.svg" alt="Illustration">
+      </section>
+   </main>
+   
+   <script>
+      function showhidePass(ob, icon) {
+         if (ob.type === "password") {
+            ob.type = "text";
+            icon.innerHTML = "<i class='fas fa-eye-slash'></i>";
+         } else {
+            ob.type = "password";
+            icon.innerHTML = "<i class='fas fa-eye'></i>";
+         }
+      }
+
+      function login(){
+         window.location="./index.html";
+      }
+   </script>
+</body>
+</html>

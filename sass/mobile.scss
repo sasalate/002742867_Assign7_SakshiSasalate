@@ -1,0 +1,76 @@
+@media only screen and (max-width: 600px) {
+    body{
+       padding: 0 3%;
+    }
+    nav{
+       height: 10vh;
+    }
+    .popup{
+       width: 90%;
+    }
+    #welcome{
+       margin-top: 2%;
+    }
+    #welcome h2{
+       margin: 2% auto;
+       font-size: calc(3vw + .5rem);
+    }  
+    #welcome span{
+       margin: 2% auto;
+    }
+    .box {
+       margin: 5% auto 0 auto;
+       padding: 4%;
+       grid-gap: 3%;
+       grid-template-columns: 2fr 1fr;
+    }
+    .box input{
+       margin-right: 3%;
+    }
+    .box button{
+       margin-left: 3%;
+    }
+    button{
+       padding: .4em 15px;
+    }
+    .social{
+       margin: 10%;
+    }
+    .social a{
+       font-size: calc(1vw + .9rem);
+       min-width: 40px;
+       min-height: 40px;
+       width: 45px;
+       height: 45px;
+       margin: auto 2%;
+    }
+    
+    .articleSection{
+       display: unset;
+    }
+    .articlelist{
+       margin-top: 2%;
+    }
+    .articlelist .cardA .atitledec h4{
+       font-size: 80%;
+    }
+ 
+    footer{
+       flex-direction: column;
+    }   
+    footer .mobile{
+       display: block;
+    }
+    footer .desktop{
+       display: none;
+    }
+    footer .feedback{
+       padding: 5% 0;
+       border: none;
+       border-top: 2px solid var(--ipbg);
+       border-bottom: 2px solid var(--ipbg);
+    }
+ }
+
+
+

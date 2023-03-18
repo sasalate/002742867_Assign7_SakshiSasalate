@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog World</title>
+   
+   <link rel="stylesheet" href="./css/blog.css">
+   <link rel="stylesheet" href="./css/theme.css">
+   <link rel="stylesheet" href="./css/mobile.css">
+   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      onload="this.rel='stylesheet'">
+</head>
+
+<body id="bdy">
+   <!-- Toggle -->
+   <div id='main'>
+      <input type="checkbox" id="theme">
+      <a href="#" onclick="toggleTheme(theme)">
+         <div id='moon'>
+            <div id="moonspot1" class="spots"></div>
+            <div id="moonspot2" class="spots"></div>
+         </div>
+      </a>
+      <a href="#bdy" onclick="toggleTheme(theme)">
+         <div id='cover'></div>
+      </a>
+   </div>
+
+   <!-- END Toggle -->
+
+   <main id="mainpage">
+      <!-- Navigation -->
+      <nav>
+         <div class="hero">
+            <div class="heroImg">
+               <img src="./assets/B.png" alt="Hero Img" class="circle img profile" alt="">
+            </div>
+            <div class="heroTitle">
+               <h1>Blog World</h1>
+            </div>
+         </div>
+         <div class="getStarted">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            <button id="getStarted" onclick="window.location='./login.html'">Log out</button>
+         </div>
+      </nav>
+      <!-- END Navigation -->
+
+      <!-- Welcome -->
+      <section id="welcome">
+         <h2>Welcome <strong id="loggedName"></strong>, Explore Some Blogs !</h2>
+         <span>The good news about computers is that they do what you tell them to do. The bad news is that they do what
+            you tell them to do.</span>
+      </section>
+      <!-- END Welcome -->
+
+      <!-- Search -->
+      <div class="box">
+         <input type="text"  placeholder="Enter a Keyword or Topic names to search Articles...">
+         <button>Find</button>
+      </div>
+      <!-- END Search -->
+
+      <!-- Social -->
+      <section class="social">
+         <a href="#" target="_blank"><i class="fab fa-instagram"
+               aria-hidden="true"></i></a>
+         <a href="#" target="_blank"><i class="fab fa-facebook-f"
+               aria-hidden="true"></i></a>
+         <a href="#" target="_blank"><i class="fab fa-twitter"
+               aria-hidden="true"></i></a>
+         <a href="#" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+         <a href="#" target="_blank"><i class="fab fa-linkedin"
+               aria-hidden="true"></i></a>
+      </section>
+      <!-- END Social -->
+
+      <section class="articleSection">
+         <div class="fullarticle">
+            <div class="fullarticleblur">
+               <div class="apic">
+                  <img id="fullimg" src="./assets/monocraft_font_1-760x380.png">
+               </div>
+               <div class="apublish">
+                  <b id="apubcompany" class="apubcompany">Ars Technica</b>
+                  <span id="apublabel" class="apublabel">2022-09-07</span>
+               </div>
+               <div class="atitledec">
+                  <h4 id="fulltitle">Developer creates delightful programming font based on Minecraft</h4>
+                  <span id="fulldesc">"The font for developers who like Minecraft a bit too much."</span>
+               </div>
+               
+            </div>
+         </div>
+         <div id="articlelist" class="articlelist">
+            <!-- From api -->
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/1662150158-Ent-PythonCoding.jpeg" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Lifehacker.com</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>Learn The World's Most Popular Programming Language</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/entrepreneurship.webp" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Lifehacker.com</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>In human-centered AI, UX and software roles are evolving
+                     </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/OK.png" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Lifehacker.com</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>The OK? Programming Language
+                     </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/1661280130-Ent-GoogleGoProgramming.jpeg" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Entrepreneur</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>How to Learn Google's Programming Language Online for Just $14
+                     </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/GettyImages-1224500457-e1643727629417.webp" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Entrepreneur</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>Abstraction in programming: Taming the ones and zeros
+                     </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/61fa7f444faa730018ff6672.webp" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Business Insider</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>28 of Udemy's most popular online courses, from bestselling coding bootcamps to in-depth drawing</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="cardA">
+               <div class="cardAImg">
+                  <img src="./assets/1662150750-Ent-Perlego.jpeg" alt="" loading="lazy">
+               </div>
+               <div class="cardADesc">
+                  <div class="apublish">
+                     <b class="apubcompany">Business Insider</b>
+                     <span class="apublabel">2021-09-11</span>
+                  </div>
+                  <div class="atitledec">
+                     <h4>Access Thousands of Best-Seller Books for a Fraction of the Price
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="counter">
+            <div class="circleShape">
+               <h6>Total Visits</h6>
+               <strong id="tolVisits">100</strong>
+            </div>
+            <div class="circleShape">
+               <h6>Total Users</h6>
+               <strong id="tolUsers">35</strong>
+            </div>
+         </div>
+
+         <div class="feedback" id="feedback">
+            <h4>Feedback</h4>
+            <div class="group" id="feedgroup">
+               <input type="text" placeholder="Name">
+               <input type="text" placeholder="Suggetions">
+               <button>Feedback</button>
+            </div>
+         </div>
+         <div class="info">
+            <b>Designed and developed by</b>
+            <div class="apostedby">
+               <div class="profileCard">
+                  <div id="getProfile" class="profileimg">
+                     <img id="profilepic" alt="profile pic" loading="lazy" src="./assets/prof.jpg"
+                        class="circle img profile" alt="">
+                  </div>
+                  <span>Sakshi Sasalate</span>
+               </div>
+               <p>&#9;Created using HTML5, CSS3, Javascript, font awosome for icons </p>
+            </div>
+            <section class="social">
+               <a href="https://www.instagram.com/sakshi_sasalate/" ><i class="fab fa-instagram"
+                     aria-hidden="true"></i></a>
+               <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"
+                     aria-hidden="true"></i></a>
+               <a href="https://twitter.com/SakshiSasalate" target="_blank"><i class="fab fa-twitter"
+                     aria-hidden="true"></i></a>
+               <a href="https://github.com/sasalate" target="_blank"><i class="fab fa-github"
+                     aria-hidden="true"></i></a>
+               <a href="https://www.linkedin.com/in/sakshi-sasalate-a456401a6/" target="_blank"><i class="fab fa-linkedin"
+                     aria-hidden="true"></i></a>
+            </section>
+         </div>
+         <div class="copyright mobile">
+            <span>&copy; Sakshi Sasalate</span>
+         </div>
+      </footer>
+   </main>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+      var togglecheck = document.getElementById("theme")
+      var root = document.querySelector(':root');
+
+      if (localStorage.getItem("theme") == "dark") {
+         root.style.setProperty('--background', '#001');
+         root.style.setProperty('--backgroundglass', '#0000119e');
+         root.style.setProperty('--text', '#e7e7e7eb');
+         root.style.setProperty('--bgcol', '#5c5c5c40');
+         root.style.setProperty('--iconsbg', '#f0f2f512');
+         root.style.setProperty('--ipbg', '#f0f2f512');
+         root.style.setProperty('--titleCol', '#d5d5d5f0');
+         root.style.setProperty('--focusip', '#f0f2f524');
+         theme.checked = false
+      } else {
+         root.style.setProperty('--background', '#fff');
+         root.style.setProperty('--backgroundglass', '#ffffff82');
+         root.style.setProperty('--text', '#1c1a1f');
+         root.style.setProperty('--bgcol', '#e9eef3bb');
+         root.style.setProperty('--iconsbg', '#f0f2f5c7');
+         root.style.setProperty('--ipbg', '#dfe1e3a6');
+         root.style.setProperty('--titleCol', '#040404');
+         root.style.setProperty('--focusip', '#3574d324');
+         theme.checked = true
+      }
+
+      function toggleTheme(theme) {
+         if (theme.checked) {
+            root.style.setProperty('--background', '#001');
+            root.style.setProperty('--backgroundglass', '#0000119e');
+            root.style.setProperty('--text', '#e7e7e7eb');
+            root.style.setProperty('--bgcol', '#e9eef3bb');
+            root.style.setProperty('--titleCol', '#d5d5d5f0');
+            root.style.setProperty('--iconsbg', '#f0f2f512');
+            root.style.setProperty('--ipbg', '#f0f2f512');
+            root.style.setProperty('--focusip', '#f0f2f524');
+            localStorage.setItem("theme", "dark")
+            theme.checked = false
+         } else {
+            root.style.setProperty('--background', '#fff');
+            root.style.setProperty('--backgroundglass', '#ffffff82');
+            root.style.setProperty('--text', '#1c1a1f');
+            root.style.setProperty('--bgcol', '#5c5c5c40');
+            root.style.setProperty('--iconsbg', '#f0f2f5c7');
+            root.style.setProperty('--titleCol', '#040404');
+            root.style.setProperty('--ipbg', '#dfe1e3a6');
+            root.style.setProperty('--focusip', '#3574d324');
+            localStorage.setItem("theme", "light")
+            theme.checked = true
+         }
+      }
+   </script>
+</body>
+
+</html>
