@@ -22,6 +22,13 @@ $focusip: #3574d324;
   --focusip: $focusip;
 }
 
+%display_placeholder{
+  display: grid;
+  place-items: center;
+}
+
+
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -100,8 +107,7 @@ body {
   background: var(--background);
 
   b {
-    display: grid;
-    place-items: center;
+   @extend %display_placeholder;
   }
 
   &:hover {
@@ -208,9 +214,8 @@ nav {
     margin: 0 2%;
     width: 40px;
     color: #fff;
-    display: grid;
     cursor: pointer;
-    place-items: center;
+    @extend %display_placeholder;
     height: 40px;
     font-size: calc(0.8rem + 0.5vw);
   }
@@ -275,16 +280,13 @@ nav {
 
 .social {
   margin: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   a {
+    @extend %display_placeholder;
     color: #0c0c0c;
     background: var(--iconsbg);
     min-width: 30px;
-    display: grid;
-    place-items: center;
     backdrop-filter: blur(15px);
     text-decoration: none;
     font-size: calc(1vw + 0.4rem);
@@ -492,9 +494,7 @@ footer {
     padding: 1%;
     border-radius: 8px;
     background: var(--ipbg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
